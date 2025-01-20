@@ -4,7 +4,18 @@ There is a hidden folder called `.git`which tells you that our project is a git 
 
 If we wanted to create a git repo in a new project we' create the fodler and then initialize that repo using `git init`
 
+```sh
+mkdir /workspaces/tmp/new-project
+cd /workspaces/tmp/new-project
+git init
+touch Readme.md
+code Readme.md
+git status
+git add Readme.md
+# makes changes to readme.md
+git commit -m "add readme file"
 
+```
 
 
 ## Cloning
@@ -39,9 +50,15 @@ git commit
 
 Set the global editor
 
-´´´sh
+```sh
 git config --global core-editor emacs
-´´´
+```
+
+Make a commit and commit message withouth opening and editor
+
+```sh
+git commit -m "add another exclamation"
+```
 
 ## Branches
 
@@ -93,6 +110,19 @@ Showing the content of our .gitconfig file
 git config --list
 ```
 
+To find out where the file is located
 ```sh
 git config --list --show-origin
 ```
+
+When you first install Git on a machine you are suppose to set up your name and email
+
+```sh
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+## Log
+
+`git` log will show recent git commits to the git tree
+
