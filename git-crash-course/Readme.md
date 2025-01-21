@@ -39,7 +39,6 @@ git clone https://github.com/carlosvsccnp/Github-Examples.git
 ```
 
 
-
 ## Commits
 
 When we want to commit code we can write git commit which will open the commit edit message in the editor of choice.
@@ -57,7 +56,7 @@ git config --global core-editor emacs
 Make a commit and commit message withouth opening and editor
 
 ```sh
-git commit -m "add another exclamation"
+git commit -m "commit message"
 ```
 
 ## Branches
@@ -124,5 +123,16 @@ git config --global user.email johndoe@example.com
 
 ## Log
 
-`git` log will show recent git commits to the git tree
+To show show your recent git commits to the git tree
 
+```sh
+git log
+```
+
+## Push
+
+When we want to push a repo to our remote origin
+
+```
+git push
+```
